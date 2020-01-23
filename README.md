@@ -1,16 +1,8 @@
-# actions-template [![NPM version](https://img.shields.io/npm/v/actions-template.svg?style=flat)](https://www.npmjs.com/package/actions-template) [![NPM monthly downloads](https://img.shields.io/npm/dm/actions-template.svg?style=flat)](https://npmjs.org/package/actions-template) [![NPM total downloads](https://img.shields.io/npm/dt/actions-template.svg?style=flat)](https://npmjs.org/package/actions-template)
+# actions-template
 
 > Boilerplate for creating an actions repository.
 
 Please consider following this project's author, [Brian Woodward](https://github.com/doowb), and consider starring the project to show your :heart: and support.
-
-## Install
-
-Install with [npm](https://www.npmjs.com/):
-
-```sh
-$ npm install --save actions-template
-```
 
 ## Usage
 
