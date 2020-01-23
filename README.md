@@ -27,7 +27,7 @@ $ git clone https://github.com/transparent/actions-template.git
 
 ### Customize
 
-Next, update the [default task](./lib/tasks/default.js) or add new tasks to the [tasks]('./lib/tasks') folder:
+Next, update the [default task](./lib/tasks/default.js) or add new tasks to the [tasks](./lib/tasks) folder:
 
 **my-task.js**
 
@@ -45,13 +45,14 @@ module.exports = async options => {
 * Update the [tasks index](./lib/tasks/index.js) file to include your new task:
   ```js
   module.exports = {
-    'my-task': require('./my-task');
+    default: require('./default'),
+    'my-task': require('./my-task')
   };
   ```
 
 ### Configure
 
-A default [workflow file]('./github/workflows/main.yml') is included that will run the `default` task daily at 8AM UTC.
+A default [workflow file](./github/workflows/main.yml) is included that will run the `default` task daily at 8AM UTC.
 You can modify this file to change the time or specify another task or options to run.
 You can also create new workflow files to run more tasks or schedule tasks to run at different times.
 
