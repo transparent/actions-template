@@ -1,0 +1,26 @@
+name: Run scheduled tasks
+on:
+  # Schedule this workflow to run every day at 8AM UTC
+  schedule:
+    - cron: '0 8 * * *'
+
+jobs:
+  tasks:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checkout the repository to be able to run tasks
+    - uses: actions/checkout@v2
+
+    # Setup a Node.js runtime and install the repository's dependencies to be used when running tasks.
+    - uses: actions/setup-node@v1
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run default task
+      # Pass environment variables to be used within tasks.
+      # These will be on process.env
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Run the default task specifying a username "doowb" as an option through the command line flags
+      run: node index.js default --username doowb

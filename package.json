@@ -1,0 +1,51 @@
+{
+  "name": "actions-template",
+  "description": "Boilerplate for creating an actions repository.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/transparent/actions-template",
+  "author": "Brian Woodward (https://doowb.com)",
+  "repository": "transparent/actions-template",
+  "bugs": {
+    "url": "https://github.com/transparent/actions-template/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "composer": "^4.1.0",
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "gulp-format-md": "^2.0.0"
+  },
+  "keywords": [
+    "actions",
+    "boilerplate",
+    "template",
+    "templates",
+    "workflows"
+  ],
+  "verb": {
+    "toc": false,
+    "install": false,
+    "layout": "default",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "lint": {
+      "reflinks": true
+    }
+  }
+}
