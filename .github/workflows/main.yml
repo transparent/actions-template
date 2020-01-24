@@ -22,5 +22,5 @@ jobs:
       # These will be on process.env
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      # Run the default task specifying a username "doowb" as an option through the command line flags
-      run: node index.js default --username doowb
+      # Example of running a task. Replace <task> with a task from the lib/tasks folder.
+      run: node index.js <task>
